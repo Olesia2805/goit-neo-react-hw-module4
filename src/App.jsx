@@ -5,13 +5,16 @@ import Container from './components/Container/Container';
 // import ImageModal from './components/ImageModal/ImageModal'
 // import LoadMoreBtn from './components/LoadMoreBtn/LoadMoreBtn';
 // import Loader from './components/Loader/Loader';
-// import SearchBar from './components/SearchBar/SearchBar';
+import SearchBar from './components/SearchBar/SearchBar';
 
 const App = () => {
   return (
-    <Container>
-      <Section></Section>
-    </Container>
+    <>
+      <SearchBar onSubmit="" />
+      <Container>
+        <Section></Section>
+      </Container>
+    </>
   );
 };
 

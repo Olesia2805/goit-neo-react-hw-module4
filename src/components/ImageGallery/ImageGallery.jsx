@@ -2,7 +2,11 @@
 // import ImageCard from '../ImageCard/ImageCard';
 
 const ImageGallery = () => {
-  return <></>;
+  return (
+    <ul>
+      <li></li>
+    </ul>
+  );
 };
 
 export default ImageGallery;
