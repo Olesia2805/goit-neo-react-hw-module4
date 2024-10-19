@@ -3,6 +3,7 @@ import btnCss from './LoadMoreBtn.module.css';
 const LoadMoreBtn = ({ onClick }) => {
   const handleLoadMore = e => {
     e.preventDefault();
+    onClick();
   };
 
   return (
