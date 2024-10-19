@@ -1,35 +1,26 @@
 .label {
   position: relative;
   border-radius: 12px;
-  padding: 10px 15px;
-  font-size: 17px;
+  padding: 5px;
+  font-size: 15px;
   background-color: transparent;
   display: inline-flex;
   transition: background-color 0.3s;
-  margin-right: 15px;
-
-  &.open {
-    background-color: #fff;
-  }
 }
 
 .input {
   border: 0;
   outline: 0;
   background: none;
-  font: inherit;
   padding: 0;
-  display: inline-block;
-  vertical-align: middle;
   line-height: 1;
-  font-family: Avenir, sans-serif;
   width: 0;
   transition: width 0.3s;
-  max-width: 257px;
+  max-width: 210px;
   transform-origin: center right;
-
+  color: var(--color-input-primary);
   .open & {
-    width: 300px;
+    width: 180px;
   }
 }
 
@@ -42,34 +33,44 @@
   width: 30px;
   height: 30px;
   margin-right: 4px;
-  color: white;
+  color: var(--color-input-primary);
   transition: color 0.3s;
   cursor: pointer;
 
   &:hover {
-    color: #5d5a9f;
+    color: var(--background-btn-hover);
   }
 
   .open & {
-    color: #000;
+    color: var(--background-btn-primary);
+
+    &:hover {
+      cursor: default;
+    }
   }
 }
 
 .submitButton {
   text-align: center;
   display: inline-block;
-  position: absolute;
   text-decoration: none;
-  padding: 15px;
+  padding: 10px;
   overflow: hidden;
-  background-color: RED;
+  background-color: var(--background-btn-primary);
   transition: all 0.2s linear 0s;
-  border-radius: 15px;
+  border-radius: 12px;
   border: none;
-  color: burlywood;
+  color: var(--color-btn-primary);
+  font-family: 'Oswald', sans-serif;
 }
 
 .submitButton:hover {
-  background-color: aqua;
+  background-color: var(--background-btn-hover);
   cursor: pointer;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }

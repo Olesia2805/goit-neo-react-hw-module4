@@ -4,6 +4,7 @@ import clsx from 'clsx';
 const Section = ({ children, className }) => {
   const sectionClassName = clsx(className, {
     // [style.example]: className === 'example',
+    [style.search]: className === 'search',
     [style.section]: true,
   });
   return <section className={sectionClassName}>{children}</section>;

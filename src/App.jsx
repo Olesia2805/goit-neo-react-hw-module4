@@ -10,9 +10,10 @@ import SearchBar from './components/SearchBar/SearchBar';
 const App = () => {
   return (
     <>
-      <SearchBar onSubmit="" />
       <Container>
-        <Section></Section>
+        <Section className="search">
+          <SearchBar onSubmit="" />
+        </Section>
       </Container>
     </>
   );

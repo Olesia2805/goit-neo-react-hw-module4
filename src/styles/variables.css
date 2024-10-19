@@ -1,5 +1,10 @@
 :root {
-  --background-primary-color: #131313;
-  --content-text-color: #f4f4f4;
+  --background-primary-color: #d2b48c;
+  --content-text-color: #131313;
   --content-font-family: 'Indie Flower', serif;
+  --background-search-color: #3e2723;
+  --background-btn-primary: #6f4e37;
+  --background-btn-hover: #8b4513;
+  --color-btn-primary: #fff8dc;
+  --color-input-primary: #ffeb99;
 }

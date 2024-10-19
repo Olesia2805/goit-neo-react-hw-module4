@@ -29,8 +29,8 @@ const SearchBar = () => {
   };
 
   return (
-    <header>
-      <form onSubmit={handleSubmit}>
+    <header className={searchCss.header}>
+      <form onSubmit={handleSubmit} className={searchCss.form}>
         <label className={`${searchCss.label} ${isOpen ? searchCss.open : ''}`}>
           <button
             className={searchCss.button}
