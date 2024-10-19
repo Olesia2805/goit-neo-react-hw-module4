@@ -1,0 +1,46 @@
+.errorMessage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+  animation: fadeIn 2s ease;
+}
+
+.errorImage {
+  width: 150px;
+  height: auto;
+  animation: bounce 1s infinite;
+}
+
+.errorTitle {
+  margin: 10px 0;
+  font-size: 1.5em;
+
+  .errorDescription {
+    font-size: 1em;
+  }
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}

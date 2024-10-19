@@ -1,9 +1,17 @@
 import btnCss from './LoadMoreBtn.module.css';
 
-const LoadMoreBtn = () => {
+const LoadMoreBtn = ({ onClick }) => {
+  const handleLoadMore = e => {
+    e.preventDefault();
+  };
+
   return (
     <>
-      <button type="submit" className={btnCss.submitButton}>
+      <button
+        type="submit"
+        className={btnCss.submitButton}
+        onClick={handleLoadMore}
+      >
         Load More
       </button>
     </>
