@@ -7,3 +7,9 @@
   justify-content: center;
   background-color: var(--background-search-color);
 }
+
+.loadMore,
+.loading {
+  display: flex;
+  justify-content: center;
+}

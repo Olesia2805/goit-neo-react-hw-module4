@@ -1,0 +1,19 @@
+.submitButton {
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+  padding: 15px;
+  overflow: hidden;
+  background-color: var(--background-btn-primary);
+  transition: all 0.2s linear 0s;
+  border-radius: 12px;
+  border: none;
+  color: var(--color-btn-primary);
+  font-family: 'Oswald', sans-serif;
+  font-size: 25px;
+}
+
+.submitButton:hover {
+  background-color: var(--background-btn-hover);
+  cursor: pointer;
+}

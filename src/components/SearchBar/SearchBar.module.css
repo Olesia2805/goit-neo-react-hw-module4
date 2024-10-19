@@ -19,6 +19,7 @@
   max-width: 210px;
   transform-origin: center right;
   color: var(--color-input-primary);
+  font-size: 20px;
   .open & {
     width: 180px;
   }

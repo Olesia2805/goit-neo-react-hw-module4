@@ -1,7 +1,7 @@
 import { useState, useRef } from 'react';
 import searchCss from './SearchBar.module.css';
 
-const SearchBar = () => {
+const SearchBar = ({ onSubmit }) => {
   const [isOpen, setIsOpen] = useState(false);
   const inputRef = useRef(null);
   const [inputValue, setInputValue] = useState('');
@@ -24,7 +24,7 @@ const SearchBar = () => {
   const handleSubmit = e => {
     e.preventDefault();
     if (isOpen && inputValue.trim()) {
-      // setInputValue('');
+      onSubmit(inputValue);
     }
   };
 

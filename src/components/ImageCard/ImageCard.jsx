@@ -1,11 +1,7 @@
 // import cardCss from './ImageCard.module.css'
 
-const ImageCard = () => {
-  return (
-    <>
-      <img src="" alt="" />
-    </>
-  );
+const ImageCard = ({ image }) => {
+  return <img src={image.urls.small} alt={image.alt_description} />;
 };
 
 export default ImageCard;
