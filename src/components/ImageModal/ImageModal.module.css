@@ -19,8 +19,18 @@
 
 .description {
   /* background-color: rgba(var(--background-btn-hover), 0.2); */
-  text-align: center;
   padding: 10px;
   background-color: rgba(139, 69, 19, 0.2);
   width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.autor {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  color: var(--color-input-primary);
+  background-color: rgba(62, 39, 35, 0.5);
+  padding: 10px;
 }

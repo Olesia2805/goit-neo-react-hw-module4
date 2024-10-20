@@ -16,12 +16,12 @@
   line-height: 1;
   width: 0;
   transition: width 0.3s;
-  max-width: 210px;
+  max-width: 300px;
   transform-origin: center right;
   color: var(--color-input-primary);
   font-size: 20px;
   .open & {
-    width: 180px;
+    width: 230px;
   }
 }
 

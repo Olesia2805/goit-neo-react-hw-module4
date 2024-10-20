@@ -1,6 +1,7 @@
 import modalCss from './ImageModal.module.css';
 import Modal from 'react-modal';
-import { IoMdCloseCircleOutline } from 'react-icons/io';
+import { IoCloseCircle } from 'react-icons/io5';
+import { FcLike } from 'react-icons/fc';
 
 Modal.setAppElement('#root');
 
@@ -25,20 +26,26 @@ const ImageModal = ({ image, onClose, isModalOpen }) => {
     >
       {image && (
         <>
-          <IoMdCloseCircleOutline
+          <p className={modalCss.autor}>@{image.user.username}</p>
+          <IoCloseCircle
             className={modalCss.closeBtn}
             onClick={onClose}
             size="50"
           />
           <img
             className={modalCss.image}
-            src={image.urls.full}
+            src={image.urls.regular}
             alt={image.alt_description}
           />
-          <p className={modalCss.description}>
-            {image.alt_description.charAt(0).toUpperCase() +
-              image.alt_description.slice(1)}
-          </p>
+          <div className={modalCss.description}>
+            <p className={modalCss.text}>
+              {image.alt_description.charAt(0).toUpperCase() +
+                image.alt_description.slice(1)}
+            </p>
+            <p className={modalCss.likes}>
+              <FcLike /> {image.likes}
+            </p>
+          </div>
         </>
       )}
     </Modal>
