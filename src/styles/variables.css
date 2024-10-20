@@ -1,10 +1,10 @@
 :root {
-  --background-primary-color: #d2b48c;
-  --content-text-color: #131313;
+  --background-primary-color: rgb(210, 180, 140);
+  --content-text-color: rgb(19, 19, 19);
   --content-font-family: 'Indie Flower', serif;
-  --background-search-color: #3e2723;
-  --background-btn-primary: #6f4e37;
-  --background-btn-hover: #8b4513;
-  --color-btn-primary: #fff8dc;
-  --color-input-primary: #ffeb99;
+  --background-search-color: rgb(62, 39, 35);
+  --background-btn-primary: rgb(111, 78, 55);
+  --background-btn-hover: rgb(139, 69, 19);
+  --color-btn-primary: rgb(255, 248, 220);
+  --color-input-primary: rgb(255, 235, 153);
 }
