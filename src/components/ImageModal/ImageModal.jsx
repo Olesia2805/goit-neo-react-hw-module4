@@ -2,10 +2,19 @@ import modalCss from './ImageModal.module.css';
 import Modal from 'react-modal';
 import { IoCloseCircle } from 'react-icons/io5';
 import { FcLike } from 'react-icons/fc';
+import { useEffect } from 'react';
 
 Modal.setAppElement('#root');
 
 const ImageModal = ({ image, onClose, isModalOpen }) => {
+  useEffect(() => {
+    if (isModalOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+  }, [isModalOpen]);
+
   return (
     <Modal
       isOpen={isModalOpen}
@@ -14,13 +23,14 @@ const ImageModal = ({ image, onClose, isModalOpen }) => {
       className={modalCss.modal}
       style={{
         overlay: {
-          overflow: 'auto',
           background: 'rgba(0, 0, 0, .8)',
         },
         content: {
           position: 'relative',
-          maxWidth: 1024,
+          maxWidth: 900,
           margin: '40px auto',
+          padding: 0,
+          border: 'none',
         },
       }}
     >

@@ -1,8 +1,8 @@
 .image {
   display: block;
   width: 100%;
-  height: auto;
-  object-fit: contain;
+  max-height: 500px;
+  object-fit: cover;
 }
 
 .closeBtn {
@@ -18,7 +18,6 @@
 }
 
 .description {
-  /* background-color: rgba(var(--background-btn-hover), 0.2); */
   padding: 10px;
   background-color: rgba(139, 69, 19, 0.2);
   width: 100%;

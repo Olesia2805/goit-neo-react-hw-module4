@@ -65,10 +65,10 @@ const App = () => {
   return (
     <>
       <Toaster position="top-right" />
+      <Section className="search">
+        <SearchBar onSubmit={handleSubmit} />
+      </Section>
       <Container>
-        <Section className="search">
-          <SearchBar onSubmit={handleSubmit} />
-        </Section>
         <Section className="images">
           {images.length > 0 && (
             <ImageGallery images={images} onImageClick={openModal} />
