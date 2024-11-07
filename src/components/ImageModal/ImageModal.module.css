@@ -18,11 +18,15 @@
 }
 
 .description {
+  position: absolute;
   padding: 10px;
-  background-color: rgba(139, 69, 19, 0.2);
+  background-color: rgba(139, 69, 19, 0.5);
   width: 100%;
   display: flex;
   justify-content: space-between;
+  bottom: 0;
+  backdrop-filter: blur(5px);
+  color: var(--color-btn-primary);
 }
 
 .autor {
